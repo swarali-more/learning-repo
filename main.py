@@ -19,3 +19,8 @@ def get_user(name:str):
 @app.get("/multiply/{x}/{y}")
 def multi(x:int,y:int):
     return {"result": x * y}
+
+
+@app.get("/skills")
+def skills():
+    return {"skills": ["Python", "FastAPI", "Git", "React"]}
