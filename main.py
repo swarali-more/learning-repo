@@ -42,3 +42,7 @@ def skills():
     return {
         "skills": ["Python", "FastAPI", "Git", "React"]
     }
+
+@app.get("/search")
+def search(q: str):
+    return {"search_query": q}
