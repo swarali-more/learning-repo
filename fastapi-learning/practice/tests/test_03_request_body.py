@@ -2,7 +2,10 @@ import sys
 import pytest
 from fastapi.testclient import TestClient
 
-sys.path.insert(0, r"C:\swarali\vs code folder\lerning-folder\fastapi-lerning\practice\03_request-body-pydantic")
+sys.path.insert(
+    0,
+    r"C:\swarali\vs code folder\learning-folder\fastapi-learning\practice\03_request_body_pydantic"
+)
 
 from main import app
 
