@@ -1,0 +1,27 @@
+import sys
+import pytest
+from fastapi.testclient import TestClient
+
+sys.path.insert(0, r"C:\swarali\vs code folder\lerning-folder\fastapi-lerning\practice\02_path-and-query-params")
+
+from params import app
+
+client = TestClient(app)
+
+# Test 1: Path parameter - product
+def test_get_product():
+    response = client.get("/product/5")
+    assert response.status_code == 200
+    assert response.json() == {"product_id": 5}
+
+# Test 2: Path parameter - student
+def test_get_student():
+    response = client.get("/student/10")
+    assert response.status_code == 200
+    assert response.json() == {"Roll_No": 10}
+
+# Test 3: Path parameter - city
+def test_get_city():
+    response = client.get("/city/Pune")
+    assert response.status_code == 200
+    assert response.json() == {"City Name": "Pune"}
