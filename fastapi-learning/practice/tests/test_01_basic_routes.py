@@ -2,7 +2,9 @@ import sys
 import pytest
 from fastapi.testclient import TestClient
 
-sys.path.insert(0, r"C:\swarali\vs code folder\lerning-folder\fastapi-lerning\practice\01_basic-routes")
+import sys
+
+sys.path.append(r"C:\swarali\vs code folder\learning-folder\fastapi-learning\practice\01_basic_routes")
 
 from routes import app
 

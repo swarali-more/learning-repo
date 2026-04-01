@@ -2,7 +2,10 @@ import sys
 import pytest
 from fastapi.testclient import TestClient
 
-sys.path.insert(0, r"C:\swarali\vs code folder\lerning-folder\fastapi-lerning\practice\02_path-and-query-params")
+sys.path.insert(
+    0,
+    r"C:\swarali\vs code folder\learning-folder\fastapi-learning\practice\02_path_query_params"
+)
 
 from params import app
 
