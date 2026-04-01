@@ -4,7 +4,7 @@ from fastapi.testclient import TestClient
 
 sys.path.insert(
     0,
-    r"C:\swarali\vs code folder\learning-folder\fastapi-learning\practice\03_request_body_pydantic"
+    r"C:\swarali\vs code folder\learning-folder\fastapi-learning\practice\03_request_body"
 )
 
 from main import app
