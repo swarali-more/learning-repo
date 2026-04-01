@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from day3.schemas import Item
+from schemas import Item
 
 app = FastAPI()
 
