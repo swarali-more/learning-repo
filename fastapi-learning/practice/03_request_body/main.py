@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from schemas import Item
+from schemas import Item, UserCreate, UserResponse
 
 app = FastAPI()
 
@@ -25,4 +25,11 @@ async def update_item(item_id: int, item: Item):
 async def get_all_items():
     return {
         "message": "All items fetched!"
+    }
+
+@app.post("/users/", response_model=UserResponse)
+async def create_user(user: UserCreate):
+    return {
+        "username": user.username,
+        "email": user.email
     }
