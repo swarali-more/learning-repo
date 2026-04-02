@@ -33,3 +33,7 @@ async def create_user(user: UserCreate):
         "username": user.username,
         "email": user.email
     }
+
+@app.get("/health")
+async def health_check():
+    return {"status": "API is running"}
