@@ -16,3 +16,8 @@ def about():
 @app.get("/user/{user_id}")
 def get_user(user_id: int):
     return {"user_id": user_id}
+
+# Route 4 - Book
+@app.get("/book/{book_name}")
+def get_book(book_name: str):
+    return {"book_name": book_name}
