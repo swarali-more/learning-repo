@@ -33,4 +33,3 @@ def get_city_name(city_name : str):
 def get_user_id(user_id : int):
     return {"User Info":f"Profile of user {user_id}"}
 
-
