@@ -36,3 +36,8 @@ def get_students(name: str, age: int):
 @app.get("/order/{order_id}")
 def get_order(order_id: int, status: str):
     return {"order_id": order_id, "status": status}
+
+# Route 8 - Login
+@app.get("/login/{username}")
+def get_login(username: str, password: str):
+    return {"username": username, "password": password}
